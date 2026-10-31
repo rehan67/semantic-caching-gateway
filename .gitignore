@@ -1,0 +1,18 @@
+## .NET Core / C#
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## IDE & Editor files
+.vs/
+.vscode/
+.idea/
+*.swp
+*~
+
+## OS generated files
+.DS_Store
+Thumbs.db

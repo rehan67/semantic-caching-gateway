@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redis-stack:
+    image: redis/redis-stack:7.2.0-v10
+    container_name: redis-semantic-gateway
+    ports:
+      - "6379:6379"
+      - "8001:8001" # RedisInsight UI
+    environment:
+      - REDIS_ARGS=--save "" --appendonly no
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
